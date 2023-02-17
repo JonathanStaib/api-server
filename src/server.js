@@ -2,7 +2,6 @@
 
 const express = require('express');
 const logger = require('./middleware/logger.js');
-const validator = require('./middleware/validator');
 const notFound = require('./handlers/404');
 const errorHandler = require('./handlers/500');
 const customerRouter = require('./routes/customer');
@@ -24,11 +23,6 @@ app.get('/', (req, res, next) => {
 
 app.get('/bad', (req, res, next) => {
   next('we have an error');
-});
-
-app.get('/person', validator, (req, res, next) => {
-  console.log('this is the query from server.js', req.query);
-  res.status(200).json(req.query);
 });
 
 app.use('*', notFound);
