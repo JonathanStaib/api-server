@@ -34,9 +34,10 @@ DATABASE_URL
 
 #### Tests
 
-fill this in as you see fit
 - How do you run tests?
+
   npm test with jest and supertest
+  
 - Any tests of note?
   - 404 invalid route
   - 404 invalid method
@@ -50,4 +51,4 @@ fill this in as you see fit
 
 #### UML
 
-![Lab-01 UML](assets/lab-01-uml.png)
+![Lab-04 UML](./assets/lab-04-UML.png)
